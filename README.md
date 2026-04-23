@@ -42,7 +42,7 @@ http://rentalmobil-php.faqoy.id/
 ```bash
 /project-root
 │── index.php
-│── daftar-mobil.php
+│── mobil.php
 │── kontak.php
 │── login.php
 │
@@ -51,11 +51,12 @@ http://rentalmobil-php.faqoy.id/
 │   ├── js/
 │   └── images/
 │
-├── config/
-│   └── database.php
+├── koneksi/
+│   ├── koneksi.php
+│   └── proses.php    
 │
 └── database/
-    └── rental_mobil.sql
+    └── rentalmobil_php.sql
 ```
 
 ---
@@ -65,7 +66,7 @@ http://rentalmobil-php.faqoy.id/
 ### 1. Clone Project
 
 ```bash
-git clone https://github.com/username/rental-mobil-php.git
+git clone https://github.com/mfiqihalamsyah/rentalmobil-php.git
 ```
 
 ### 2. Pindahkan ke Local Server
@@ -78,8 +79,8 @@ Letakkan folder project ke:
 ### 3. Setup Database
 
 * Buka **phpMyAdmin**
-* Buat database: `rental_mobil`
-* Import file: `/database/rental_mobil.sql`
+* Buat database: `rentalmobil_php`
+* Import file: `/database/rentalmobil_php.sql`
 
 ### 4. Konfigurasi Koneksi
 
@@ -93,7 +94,7 @@ config/database.php
 $host = "localhost";
 $user = "root";
 $password = "";
-$database = "rental_mobil";
+$database = "rentalmobil_php";
 ```
 
 ### 5. Jalankan Project
@@ -101,7 +102,7 @@ $database = "rental_mobil";
 Buka di browser:
 
 ```
-http://localhost/rental-mobil
+http://localhost/rentalmobil-php
 ```
 
 ---
