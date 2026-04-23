@@ -1,25 +1,132 @@
-Source Code Aplikasi Rental Mobil PHP & MySQL, tambah data, update / edit data, dan hapus data. User interface menggunakan Template Bootstrap. Aplikasi kali ini cocok untuk yang sedang belajar PHP & MySQL dasar, karena pada aplikasi ini anda dapat belajar tentang cara membuat login, kemudian membuat menu-menu yang terdapat pada bagian halaman admin seputar aplikasi, membuat CRUD data mobil, data transaksi booking dan lain nya.
+# 🚗 Mugi Lancar Transport - Car Rental Website
 
-## Fitur-fitur pada Aplikasi pada kali ini :
+Website rental mobil sederhana berbasis **PHP & MySQL** yang digunakan untuk menampilkan daftar mobil, status ketersediaan, serta informasi layanan transportasi antar kota.
 
-Login & Daftar Akun
+🌐 **Live Demo:**
+http://rentalmobil-php.faqoy.id/
 
-- Modul Mobil
-- Modul Booking
-- Modul Peminjaman dan Pengembalian
-- Informasi Website dan Aplikasi
-- DLL
+---
 
-## Untuk Login Admin :
+## 📌 Features
 
-Username : admin
-Password : admin
+* ✅ Menampilkan daftar mobil
+* ✅ Status mobil (Available / Not Available)
+* ✅ Tampilan responsive (Bootstrap)
+* ✅ Halaman utama (Landing Page)
+* ✅ Navigasi sederhana (Home, Daftar Mobil, Kontak, Login)
+* ✅ UI modern dengan desain clean
 
-## Untuk Login Pengguna :
+---
 
-Username : user
-Password : user
+## 🛠️ Tech Stack
 
-## Website Online :
+**Frontend:**
 
-mugilancartrans.my.id
+* HTML5
+* CSS3
+* Bootstrap
+* JavaScript
+
+**Backend:**
+
+* PHP (Native)
+
+**Database:**
+
+* MySQL
+
+---
+
+## 📂 Project Structure
+
+```bash
+/project-root
+│── index.php
+│── daftar-mobil.php
+│── kontak.php
+│── login.php
+│
+├── assets/
+│   ├── css/
+│   ├── js/
+│   └── images/
+│
+├── config/
+│   └── database.php
+│
+└── database/
+    └── rental_mobil.sql
+```
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1. Clone Project
+
+```bash
+git clone https://github.com/username/rental-mobil-php.git
+```
+
+### 2. Pindahkan ke Local Server
+
+Letakkan folder project ke:
+
+* `htdocs` (XAMPP)
+* `www` (Laragon)
+
+### 3. Setup Database
+
+* Buka **phpMyAdmin**
+* Buat database: `rental_mobil`
+* Import file: `/database/rental_mobil.sql`
+
+### 4. Konfigurasi Koneksi
+
+Edit file:
+
+```php
+config/database.php
+```
+
+```php
+$host = "localhost";
+$user = "root";
+$password = "";
+$database = "rental_mobil";
+```
+
+### 5. Jalankan Project
+
+Buka di browser:
+
+```
+http://localhost/rental-mobil
+```
+
+---
+
+## 👨‍💻 Author
+
+**Muhammad Fiqih Alamsyah**
+📍 Bekasi, Indonesia
+📧 [fiqihalmsyah@gmail.com](mailto:fiqihalmsyah@gmail.com)
+🔗 https://www.linkedin.com/in/mfiqihalamsyah
+
+---
+
+## 📖 Background Project
+
+Project ini dibuat sebagai bagian dari tugas akhir:
+
+> "Website Design Mugi Lancar Transport Car Rental using PHP and MySQL"
+
+---
+
+## 🚀 Future Improvements
+
+* 🔐 Sistem login & multi-user
+* 📅 Booking system (reservasi)
+* 💳 Payment integration
+* 📊 Dashboard admin
+* 📱 Mobile optimization lebih lanjut
