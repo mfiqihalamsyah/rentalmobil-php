@@ -76,7 +76,7 @@ if (!empty($_POST['nama_pengguna'])) {
         $row = $koneksi->prepare($sql);
 
         // Periksa apakah update berhasil atau tidak
-        if ($row->execute([$nama_pengguna, $username, $password, , $id_login])) {
+        if ($row->execute([$nama_pengguna, $username, $password, $id_login])) {
             echo '<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>';
             echo '<script>
                 Swal.fire({
