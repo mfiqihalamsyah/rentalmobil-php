@@ -3,7 +3,7 @@
   | Source Code Aplikasi Rental Mobil PHP & MySQL
   | 
   | @package   : rental_mobil
-  | @file      : blog.php 
+  | @file      : mobil.php 
   | @author    : faqoy@gmail.com
   | 
   | 
@@ -58,7 +58,7 @@ if (isset($_GET['cari'])) {
             <div class="input-group">
                 <input type="search" name="cari" class="form-control rounded" placeholder="Cari Mobil.." aria-label="Search" aria-describedby="search-addon" />
                 <button type="submit" class="btn btn-outline-primary">Cari</button>
-                <a href="blog.php" class="btn btn-outline-primary">Lihat Semua</a>
+                <a href="mobil.php" class="btn btn-outline-primary">Lihat Semua</a>
             </div>
         </form><br>
 

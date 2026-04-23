@@ -65,7 +65,7 @@ include 'header.php';
                         <div class="fs-3 fw-light text-muted"><?= $data->subtitle; ?></div>
                         <h1 class="display-3 fw-bolder mb-5"><span class="text-gradient d-inline"><?= $data->title; ?></span></h1>
                         <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
-                            <a class="btn btn-primary btn-lg px-3 py-3 me-sm-3 fs-6 fw-bolder" href="blog.php">Seluruh Daftar Mobil</a>
+                            <a class="btn btn-primary btn-lg px-3 py-3 me-sm-3 fs-6 fw-bolder" href="mobil.php">Seluruh Daftar Mobil</a>
                             <a class="btn btn-outline-dark btn-lg px-3 py-3 fs-6 fw-bolder" href="kontak.php">Kontak Kami</a>
                         </div>
                     </div>
@@ -262,7 +262,7 @@ include 'header.php';
                     <?php endforeach; ?>
                 </div><br>
                 <div class="text-center">
-                    <a href="blog.php" class="btn btn-primary">Lihat Seluruh Daftar Mobil</a><br><br>
+                    <a href="mobil.php" class="btn btn-primary">Lihat Seluruh Daftar Mobil</a><br><br>
                 </div>
 
             </div>

@@ -119,7 +119,6 @@ if ($_GET['id'] == 'daftar') {
     $data[] = $_POST['user'];
     $data[] = md5($_POST['pass']);
     $data[] = 'pengguna';
-    $data[] = $_POST['user'];
 
     $row = $koneksi->prepare("SELECT * FROM login WHERE username = ?");
 
@@ -151,8 +150,8 @@ if ($_GET['id'] == 'daftar') {
         </script>';
     } else {
 
-        $sql = "INSERT INTO `login`(`nama_pengguna`, `username`, `password`, `level`, `NoSIM`)
-                VALUES (?,?,?,?,?)";
+        $sql = "INSERT INTO `login`(`nama_pengguna`, `username`, `password`, `level`)
+                VALUES (?,?,?,?)";
         $row = $koneksi->prepare($sql);
         $row->execute($data);
         echo '
@@ -427,7 +426,8 @@ if ($_GET['id'] == 'konfirmasi') {
             echo '<script>
                 Swal.fire({
                     icon: "success",
-                    title: "Kirim Sukses , Pembayaran anda sedang diproses",
+                    title: "Kirim Sukses",
+					text: "Pembayaran anda sedang diproses",
                 }).then(() => {
                     history.go(-2);
                 });

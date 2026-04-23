@@ -88,10 +88,6 @@ include 'header.php';
                             <input type="text" name="user" id="regUsername" class="form-control form-control-lg" required placeholder="Masukkan username">
                         </div>
                         <div class="form-group">
-                            <label for="NoSIM" class="form-label">No. SIM</label>
-                            <input type="text" name="NoSIM" id="regNoSIM" class="form-control form-control-lg" required placeholder="Masukkan No SIM">
-                        </div>
-                        <div class="form-group">
                             <label for="password" class="form-label">Password</label>
                             <div class="input-group">
                                 <input type="password" name="pass" id="regPassword" class="form-control form-control-lg" required placeholder="Masukkan password">

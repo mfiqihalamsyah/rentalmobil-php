@@ -2,7 +2,7 @@
 /*
   | Source Code Aplikasi Rental Mobil PHP & MySQL
   | 
-  | @package   : rental_mobil
+  | @package   : rentalmobil_php
   | @file	     : koneksi.php 
   | @author    : faqoy@gmail.com
   | 
@@ -10,14 +10,14 @@
   | 
   | 
  */
-$user = 'root';
-$pass = '';
+$user = 'php_user';
+$pass = 'php_user';
 
-$koneksi = new PDO("mysql:host=localhost;dbname=rental_mobil", $user, $pass);
-$con = mysqli_connect("localhost", "root", "", "rental_mobil");
+$koneksi = new PDO("mysql:host=localhost;dbname=rentalmobil_php", $user, $pass);
+$con = mysqli_connect("localhost", "php_user", "php_user", "rentalmobil_php");
 
 global $url;
-$url = "http://localhost/rental_mobil-master/";
+$url = "http://localhost/rentalmobil-php/";
 
 $sql_web = "SELECT * FROM infoweb WHERE id = 1";
 $row_web = $koneksi->prepare($sql_web);

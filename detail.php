@@ -47,7 +47,7 @@ $hasil = $koneksi->query("SELECT * FROM mobil WHERE id_mobil = '$id'")->fetch();
                     <hr />
                     <center>
                         <a href="booking.php?id=<?php echo $hasil['id_mobil']; ?>" class="btn btn-success">Booking now!</a>
-                        <a href="blog.php" class="btn btn-info">Back</a>
+                        <a href="mobil.php" class="btn btn-info">Back</a>
                     </center>
                 </div>
             </div>
