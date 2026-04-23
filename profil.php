@@ -46,7 +46,6 @@ if (!empty($_POST['nama_pengguna'])) {
     $username = htmlspecialchars($_POST["username"]);
     $password = md5($_POST["password"]);
     $id_login = $_SESSION['USER']['id_login'];
-    $NoSIM = htmlspecialchars($_POST["NoSIM"]);
 
     // Cek apakah username sudah ada atau belum
     $sql_check_username = "SELECT COUNT(*) FROM login WHERE username = ? AND id_login != ?";
@@ -73,11 +72,11 @@ if (!empty($_POST['nama_pengguna'])) {
             $password = $edit_profil->password;
         }
 
-        $sql = "UPDATE login SET nama_pengguna = ?, username = ?, password = ?, NoSIM = ? WHERE id_login = ?";
+        $sql = "UPDATE login SET nama_pengguna = ?, username = ?, password = ? WHERE id_login = ?";
         $row = $koneksi->prepare($sql);
 
         // Periksa apakah update berhasil atau tidak
-        if ($row->execute([$nama_pengguna, $username, $password, $NoSIM, $id_login])) {
+        if ($row->execute([$nama_pengguna, $username, $password, , $id_login])) {
             echo '<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>';
             echo '<script>
                 Swal.fire({
@@ -123,10 +122,6 @@ $edit_profil = $row->fetch(PDO::FETCH_OBJ);
                         <div class="form-group">
                             <label for="username">Username</label>
                             <input type="text" required class="form-control" value="<?= $edit_profil->username; ?>" name="username" id="username" placeholder="" />
-                        </div>
-                        <div class="form-group">
-                            <label for="NoSIM">No. SIM</label>
-                            <input type="text" required class="form-control" value="<?= $edit_profil->NoSIM; ?>" name="NoSIM" id="NoSIM" placeholder="" />
                         </div>
                         <div class="form-group">
                             <label for="password">Password</label>
