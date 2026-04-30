@@ -3,7 +3,7 @@
 Website rental mobil sederhana berbasis **PHP & MySQL** yang digunakan untuk menampilkan daftar mobil, status ketersediaan, serta informasi layanan transportasi antar kota.
 
 🌐 **Live Demo:**
-http://rentalmobil-php.faqoy.id/
+https://rentalmobil-php.faqoy.id/
 
 ---
 
